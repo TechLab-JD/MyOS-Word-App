@@ -1,0 +1,17 @@
+#WordApp .wd { display:flex; flex-direction:column; align-items:center; height:100%; box-sizing:border-box; padding:10px; gap:10px; background:#1b1f27; color:#dfe6ee; font:13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif; }
+#WordApp .wd-board { display:grid; grid-template-rows:repeat(6,1fr); gap:5px; }
+#WordApp .wd-row { display:grid; grid-template-columns:repeat(5,1fr); gap:5px; }
+#WordApp .wd-tile { width:44px; height:44px; display:flex; align-items:center; justify-content:center; font:700 20px/1 system-ui,sans-serif; text-transform:uppercase; border:2px solid #3a4150; border-radius:4px; color:#dfe6ee; }
+#WordApp .wd-tile.filled { border-color:#5a6472; }
+#WordApp .wd-tile.correct { background:#6ab04c; border-color:#6ab04c; color:#0d0f14; }
+#WordApp .wd-tile.present { background:#f6c343; border-color:#f6c343; color:#0d0f14; }
+#WordApp .wd-tile.absent { background:#2b3240; border-color:#2b3240; color:#8b95a3; }
+#WordApp .wd-msg { font-size:12px; min-height:16px; color:#b7c0cc; text-align:center; }
+#WordApp .wd-msg.ok { color:#6ab04c; } #WordApp .wd-msg.bad { color:#ff7979; }
+#WordApp .wd-kb { display:flex; flex-direction:column; gap:5px; width:100%; max-width:380px; }
+#WordApp .wd-kbrow { display:flex; justify-content:center; gap:4px; }
+#WordApp .wd-key { flex:1; max-width:34px; height:40px; display:flex; align-items:center; justify-content:center; background:#3a4150; color:#dfe6ee; border:none; border-radius:4px; font:600 12px/1 system-ui,sans-serif; cursor:pointer; text-transform:uppercase; }
+#WordApp .wd-key.wide { max-width:54px; font-size:10px; }
+#WordApp .wd-key.correct { background:#6ab04c; color:#0d0f14; } #WordApp .wd-key.present { background:#f6c343; color:#0d0f14; } #WordApp .wd-key.absent { background:#20242e; color:#67707d; }
+#WordApp .wd-btn { background:#2b3240; color:#dfe6ee; border:1px solid #3a4150; border-radius:6px; padding:6px 14px; cursor:pointer; font:inherit; }
+#WordApp .wd-btn:hover { background:#353d4d; }
